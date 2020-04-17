@@ -46,3 +46,4 @@ Visit `localhost:8080/` or `localhost:8080/ping` and you'll see on your explorer
 `
 This is just a simple app in spring boot
 `
+

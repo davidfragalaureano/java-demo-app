@@ -1,0 +1,13 @@
+version: "3.6"
+
+services:
+      java-app:
+        image: java-demo:1.0
+        build:
+           context: ./java-app
+           dockerfile: ./Dockerfile
+      jenkins:
+        image: jenkins-dvd:1.0
+        build:
+          context: .
+          dockerfile: ./Dockerfile 
