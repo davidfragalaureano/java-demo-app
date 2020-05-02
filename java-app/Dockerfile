@@ -3,7 +3,7 @@ FROM maven:3.5-jdk-8 AS build
 ENV JAR_NAME=demo-0.0.1-SNAPSHOT-exec.jar
 WORKDIR /home/app
 COPY pom.xml .
-COPY .m2/settings.xml .mvn ./
+COPY .m2/settings.xml ./
 COPY src src
 RUN mvn -s settings.xml clean package  -Dmaven.test.skip=true
 
