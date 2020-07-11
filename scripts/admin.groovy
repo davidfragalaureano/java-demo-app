@@ -1,7 +1,7 @@
 import jenkins.install.*;
-import jenkins.model.*
-import jenkins.security.s2m.AdminWhitelistRule
-import hudson.security.*
+import jenkins.model.*;
+import jenkins.security.s2m.AdminWhitelistRule;
+import hudson.security.*;
 import hudson.util.*;
 
 def instance = Jenkins.getInstance()

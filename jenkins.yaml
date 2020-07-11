@@ -2,11 +2,13 @@ version: "3.7"
 
 services:
   jenkins:
+    privileged: true
     image: jenkins-dvd:1.0
     ports:
       - "9090:8080"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/bin/docker
     networks:
       - infrastructure
 
